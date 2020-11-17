@@ -57,7 +57,7 @@ We explain them:
 Let's consider an example:
 
 ```python
-python ScriptDetectMask.py people_normal.jpg model.tflite detection_config.json False 0.6
+python ScriptDetectMask.py people_normal.jpg models/model.tflite detection_config.json False 0.6
 ```
 
 This will generate an *output.png* as output which is the same photo as input, but with the detected masks/no masks.
@@ -67,7 +67,7 @@ This will generate an *output.png* as output which is the same photo as input, b
 We can consider another case where we have people wearing masks:
 
 ```python
-python ScriptDetectMask.py people_with_masks.jpg model.tflite detection_config.json False 0.6
+python ScriptDetectMask.py people_with_masks.jpg models/model.tflite detection_config.json False 0.6
 ```
 
 And we obtain:
