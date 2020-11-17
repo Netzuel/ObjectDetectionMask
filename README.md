@@ -43,7 +43,7 @@ or *pip3* depending on your configuration.
 The general usage for detect masks in a image is the following:
 
 ```python
-python ScriptDetectMask.py path_to_photo path_to_tflite_model path_to_json boolean_gpu threshold_detection
+python Scripts/ScriptDetectMask.py path_to_photo path_to_tflite_model path_to_json boolean_gpu threshold_detection
 ```
 
 We explain them:
@@ -57,7 +57,7 @@ We explain them:
 Let's consider an example:
 
 ```python
-python ScriptDetectMask.py people_normal.jpg models/model.tflite detection_config.json False 0.6
+python Scripts/ScriptDetectMask.py people_normal.jpg Models/model.tflite detection_config.json False 0.6
 ```
 
 This will generate an *output.png* as output which is the same photo as input, but with the detected masks/no masks.
@@ -67,7 +67,7 @@ This will generate an *output.png* as output which is the same photo as input, b
 We can consider another case where we have people wearing masks:
 
 ```python
-python ScriptDetectMask.py people_with_masks.jpg models/model.tflite detection_config.json False 0.6
+python Scripts/ScriptDetectMask.py people_with_masks.jpg Models/model.tflite detection_config.json False 0.6
 ```
 
 And we obtain:
@@ -86,11 +86,11 @@ The parameters here have the same meaning as before but this time the model need
 By last, we can also take a look at the real time detection although even with GPU the FPS rate is not the best, but, however, it also works.
 
 ```python
-python ScriptDetectMaskRealTime.py path_to_tflite_model path_to_json boolean_gpu threshold_detection
+python Scripts/ScriptDetectMaskRealTime.py path_to_tflite_model path_to_json boolean_gpu threshold_detection
 ```
 
 ```python
-python ScriptDetectMaskRealTimeNOLITE.py path_to_model path_to_json boolean_gpu threshold_detection
+python Scripts/ScriptDetectMaskRealTimeNOLITE.py path_to_model path_to_json boolean_gpu threshold_detection
 ```
 
 These two scripts are in reality the same just for the fact that the first one uses Tensorflow Lite and the second one uses raw Tensorflow; the last one is a little bit faster.
