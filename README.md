@@ -77,7 +77,7 @@ And we obtain:
 As we can see, we obtain the expected result. In addition, this can be also achieved in videos since a video is just a sequence of images. We can write:
 
 ```python
-python ScriptDetectMaskVideo.py path_to_video path_to_model path_to_json boolean_gpu threshold_detection
+python Scripts/ScriptDetectMaskVideo.py path_to_video path_to_model path_to_json boolean_gpu threshold_detection
 ```
 The parameters here have the same meaning as before but this time the model needs to be the *.h5* since this script is not written in order to work with TFLite since Tensorflow is faster here. Although this code can also run without using GPU, it is recommended to use it since, otherwise, it could take tons of time to execute all code for a video of, for example, 5 minutes. As an example you can click on the image below which will redirect you to a YouTube video.
 
